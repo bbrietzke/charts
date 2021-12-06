@@ -1,0 +1,22 @@
+
+{{- range $v := .Values.nfsVolumes }}
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: {{ $v.name | quote }}
+  labels:
+    name: {{ $v.name | quote }}
+    type: volatile
+    storeage: nfs
+spec:
+  capacity:
+    storage: {{ $v.storageCapacity | quote }}
+  accessModes:
+    - {{ $v.accessMode | quote }}
+  persistentVolumeReclaimPolicy: {{ $v.reclaimPolicy | quote }}
+  nfs:
+    path: {{ $v.path | quote }}
+    server: {{ $v.server | quote }}
+    readOnly: false
+{{- end }}
