@@ -49,6 +49,8 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href=".">Home</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#using-the-charts">Using the Charts</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#chart-layout">Chart Layout</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#automation">Automation</a>
@@ -91,12 +93,18 @@
               
                 <h1 id="welcome-to-charts">Welcome to Charts</h1>
 <p>This is a collection of helm charts that I've worked on for my Kubernetes cluster at home.</p>
+<h2 id="using-the-charts">Using the Charts</h2>
+<pre><code>helm repo add bbrietzke https://bbrietzke.github.io/charts/
+</code></pre>
 <h2 id="chart-layout">Chart Layout</h2>
 <ul>
 <li><strong>volumes</strong>: creates a number of persistent volumes to be used by anybody in the cluster</li>
 </ul>
 <h2 id="automation">Automation</h2>
 <p>There is a <em>Makefile</em> included that will help automate a number of the steps to publish the charts.</p>
+<p>The typical workflow includes:</p>
+<pre><code>make volumes index publish
+</code></pre>
 <p>Commands include:</p>
 <ul>
 <li><strong>publish</strong>: use MkDocs to publish to <code>gh-pages</code> branch</li>
@@ -148,5 +156,5 @@
 
 <!--
 MkDocs version : 1.2.3
-Build Date UTC : 2021-12-06 22:31:27.100153+00:00
+Build Date UTC : 2021-12-06 22:57:44.012792+00:00
 -->
