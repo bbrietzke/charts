@@ -3,12 +3,12 @@ entries:
   volumes:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2021-12-06T16:23:30.739223-06:00"
+    created: "2021-12-06T16:31:26.863052-06:00"
     description: Building persistent volumes
     digest: c358b20de4de5ec7b25c915ac5cfdcf2d93b812a225866b671a7d71d511b9ea5
     name: volumes
     type: application
     urls:
-    - volumes-0.1.0.tgz
+    - charts/volumes-0.1.0.tgz
     version: 0.1.0
-generated: "2021-12-06T16:23:30.738062-06:00"
+generated: "2021-12-06T16:31:26.862422-06:00"
