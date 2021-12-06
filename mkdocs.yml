@@ -1,0 +1,6 @@
+site_name: Helm Charts
+theme: readthedocs
+site_url: https://bbrietzke.github.com/charts/
+nav:
+    - Home: index.md
+
