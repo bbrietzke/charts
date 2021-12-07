@@ -1,17 +1,29 @@
-# Welcome to MkDocs
+# Welcome to Charts
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This is a collection of helm charts that I've worked on for my Kubernetes cluster at home.
 
-## Commands
+## Using the Charts
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+```
+helm repo add bbrietzke https://bbrietzke.github.io/charts/
+```
 
-## Project layout
+## Chart Layout
+* __volumes__: creates a number of persistent volumes to be used by anybody in the cluster
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Automation
+There is a _Makefile_ included that will help automate a number of the steps to publish the charts.
+
+The typical workflow includes:
+
+```
+make volumes index publish
+```
+
+Commands include:
+
+* __publish__: use MkDocs to publish to `gh-pages` branch
+* __volumes__: package the volumes chart and move it to the correct location
+* __index__: create or update the index.yaml file
+
+
