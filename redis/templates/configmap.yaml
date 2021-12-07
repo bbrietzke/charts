@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "redis.fullname" . }}
+data:
+  master.conf: |
+    {{- with .Values.redis }}
+    bind {{ .bind | default 127.0.0.1 }}
+    protected-mode {{ .protectedMode }}
+    port {{ .port }}
+    tcp-backlog 511
+    timeout {{ .timeout }}
+    tcp-keepalive 300
+    daemonize no
+    supervised no
+    pidfile /var/run/redis_6379.pid
+    loglevel notice
+    logfile ""
+    databases {{ .databases }}
+    {{- end }}
+  slave.conf: |
+    slaveof redis-0.redis {{ .port }}
