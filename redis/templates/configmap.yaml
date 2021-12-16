@@ -5,9 +5,9 @@ metadata:
 data:
   master.conf: |
     {{- with .Values.redis }}
-    bind {{ .bind | default 127.0.0.1 }}
     protected-mode {{ .protectedMode }}
     port {{ .port }}
+    bind {{ .bind  }}
     tcp-backlog 511
     timeout {{ .timeout }}
     tcp-keepalive 300
@@ -17,6 +17,7 @@ data:
     loglevel notice
     logfile ""
     databases {{ .databases }}
+    dir {{ .dataDirectory }}
     {{- end }}
   slave.conf: |
     slaveof redis-0.redis {{ .port }}

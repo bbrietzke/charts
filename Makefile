@@ -3,10 +3,12 @@
 DOC := $(shell which mkdocs)
 HELM := $(shell which helm)
 
+VOLUMES_TGZ := docs/charts/volumes*.tgz
+
 publish: $(DOC)
 	$(DOC) gh-deploy
 
-volumes: $(HELM)
+volumes: $(HELM) $(VOLUMES_TGZ)
 	$(HELM) package volumes
 	mv volumes*.tgz docs/charts
 

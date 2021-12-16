@@ -33,5 +33,29 @@ nfsVolumes:
     path: /srv/m/share_five
     server: callisto.attlocal.net
     reclaimPolicy: Retain
+  - name: volume-six
+    storageCapacity: 10Gi
+    accessMode: ReadWriteMany
+    path: /srv/m/share_six
+    server: callisto.attlocal.net
+    reclaimPolicy: Retain
+  - name: volume-seven
+    storageCapacity: 2Gi
+    accessMode: ReadWriteMany
+    path: /srv/m/share_seven
+    server: callisto.attlocal.net
+    reclaimPolicy: Retain
+  - name: volume-eight
+    storageCapacity: 2Gi
+    accessMode: ReadWriteMany
+    path: /srv/m/share_eight
+    server: callisto.attlocal.net
+    reclaimPolicy: Retain
+  - name: volume-nine
+    storageCapacity: 2Gi
+    accessMode: ReadWriteMany
+    path: /srv/m/share_nice
+    server: callisto.attlocal.net
+    reclaimPolicy: Retain
 
 

@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
   name: {{ include "redis.fullname" . }}
   labels:
@@ -25,37 +25,27 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       serviceAccountName: {{ include "redis.serviceAccountName" . }}
-      securityContext:
-        {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
         - name: {{ .Chart.Name }}
-          securityContext:
-            {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
-            - name: http
-              containerPort: 80
+            - name: redis
+              containerPort: {{ Values.redis.port }}
               protocol: TCP
-          livenessProbe:
-            httpGet:
-              path: /
-              port: http
+          startupProbe:
+            exec:
+              command:
+              - redis-cli
+              - ping
+            initialDelaySeconds:
+            periodSeconds: 
           readinessProbe:
-            httpGet:
-              path: /
-              port: http
+            exec:
+              command:
+              - redis-cli
+              - ping
+            initialDelaySeconds:
+            periodSeconds: 
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
-      {{- with .Values.nodeSelector }}
-      nodeSelector:
-        {{- toYaml . | nindent 8 }}
-      {{- end }}
-      {{- with .Values.affinity }}
-      affinity:
-        {{- toYaml . | nindent 8 }}
-      {{- end }}
-      {{- with .Values.tolerations }}
-      tolerations:
-        {{- toYaml . | nindent 8 }}
-      {{- end }}
