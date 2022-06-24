@@ -12,5 +12,5 @@ volumes: $(HELM) $(VOLUMES_TGZ)
 	$(HELM) package volumes
 	mv volumes*.tgz docs/charts
 
-index: $(HELM)
+index: $(HELM) volumes
 	$(HELM) repo index docs/

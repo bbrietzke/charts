@@ -3,59 +3,65 @@
 # Declare variables to be passed into your templates.
 
 nfsVolumes: 
+  - name: volume-zeo
+    storageCapacity: 10Gi
+    accessMode: ReadWriteOnce
+    path: /srv/nfs_shares/share_zero
+    server: callisto.local
+    reclaimPolicy: Retain
   - name: volume-one
-    storageCapacity: 1Gi
+    storageCapacity: 10Gi
     accessMode: ReadWriteMany
-    path: /srv/m/share_one
-    server: callisto.attlocal.net
+    path: /srv/nfs_shares/share_one
+    server: callisto.local
     reclaimPolicy: Retain
   - name: volume-two
-    storageCapacity: 1Gi
+    storageCapacity: 10Gi
     accessMode: ReadWriteMany
-    path: /srv/m/share_two
-    server: callisto.attlocal.net
+    path: /srv/nfs_shares/share_two
+    server: callisto.local
     reclaimPolicy: Retain
   - name: volume-three
-    storageCapacity: 1Gi
+    storageCapacity: 10Gi
     accessMode: ReadWriteMany
-    path: /srv/m/share_three
-    server: callisto.attlocal.net
+    path: /srv/nfs_shares/share_three
+    server: callisto.local
     reclaimPolicy: Retain
   - name: volume-four
-    storageCapacity: 10Gi
+    storageCapacity: 100Gi
     accessMode: ReadWriteMany
-    path: /srv/m/share_four
-    server: callisto.attlocal.net
+    path: /srv/nfs_shares/share_four
+    server: callisto.local
     reclaimPolicy: Retain
   - name: volume-five
-    storageCapacity: 10Gi
+    storageCapacity: 100Gi
     accessMode: ReadWriteMany
-    path: /srv/m/share_five
-    server: callisto.attlocal.net
+    path: /srv/nfs_shares/share_five
+    server: callisto.local
     reclaimPolicy: Retain
   - name: volume-six
-    storageCapacity: 10Gi
+    storageCapacity: 100Gi
     accessMode: ReadWriteMany
-    path: /srv/m/share_six
-    server: callisto.attlocal.net
+    path: /srv/nfs_shares/share_six
+    server: callisto.local
     reclaimPolicy: Retain
   - name: volume-seven
-    storageCapacity: 2Gi
+    storageCapacity: 20Gi
     accessMode: ReadWriteMany
-    path: /srv/m/share_seven
-    server: callisto.attlocal.net
+    path: /srv/nfs_shares/share_seven
+    server: callisto.local
     reclaimPolicy: Retain
   - name: volume-eight
-    storageCapacity: 2Gi
+    storageCapacity: 20Gi
     accessMode: ReadWriteMany
-    path: /srv/m/share_eight
-    server: callisto.attlocal.net
+    path: /srv/nfs_shares/share_eight
+    server: callisto.local
     reclaimPolicy: Retain
   - name: volume-nine
-    storageCapacity: 2Gi
+    storageCapacity: 20Gi
     accessMode: ReadWriteMany
-    path: /srv/m/share_nice
-    server: callisto.attlocal.net
+    path: /srv/nfs_shares/share_nice
+    server: callisto.local
     reclaimPolicy: Retain
 
 

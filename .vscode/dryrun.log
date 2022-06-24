@@ -1,0 +1,4 @@
+make: Entering directory `/Users/bbrietzke/Development/charts'
+/opt/homebrew/bin/mkdocs gh-deploy
+make: Leaving directory `/Users/bbrietzke/Development/charts'
+ 
