@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 nfsVolumes: 
-  - name: volume-zeo
+  - name: volume-zero
     storageCapacity: 10Gi
     accessMode: ReadWriteOnce
     path: /srv/nfs_shares/share_zero

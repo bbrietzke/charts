@@ -17,7 +17,7 @@ There is a _Makefile_ included that will help automate a number of the steps to 
 The typical workflow includes:
 
 ```
-make volumes index publish
+make index publish
 ```
 
 Commands include:
