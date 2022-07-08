@@ -7,8 +7,8 @@ metadata:
   name: {{ $v.name | quote }}
   labels:
     name: {{ $v.name | quote }}
-    type: volatile
-    storeage: nfs
+    type: {{ $v.type | default "volatile" | quote }}
+    storage: nfs
 spec:
   capacity:
     storage: {{ $v.storageCapacity | quote }}

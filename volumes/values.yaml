@@ -3,61 +3,82 @@
 # Declare variables to be passed into your templates.
 
 nfsVolumes: 
-  - name: volume-zero
+  - name: mirrored-zero
+    storageCapacity: 5Gi
+    accessMode: ReadWriteMany
+    path: /srv/nfs_shares/share_zero
+    server: pontoon.local
+    type: mirror
+    reclaimPolicy: Retain
+  - name: mirrored-one
+    storageCapacity: 5Gi
+    accessMode: ReadWriteMany
+    path: /srv/nfs_shares/share_zero
+    server: pontoon.local
+    type: mirror
+    reclaimPolicy: Retain
+  - name: mirrored-two
+    storageCapacity: 5Gi
+    accessMode: ReadWriteMany
+    path: /srv/nfs_shares/share_zero
+    server: pontoon.local
+    type: mirror
+    reclaimPolicy: Retain
+  - name: volatile-zero
     storageCapacity: 10Gi
-    accessMode: ReadWriteOnce
+    accessMode: ReadWriteMany
     path: /srv/nfs_shares/share_zero
     server: callisto.local
     reclaimPolicy: Retain
-  - name: volume-one
+  - name: volatile-one
     storageCapacity: 10Gi
     accessMode: ReadWriteMany
     path: /srv/nfs_shares/share_one
     server: callisto.local
     reclaimPolicy: Retain
-  - name: volume-two
+  - name: volatile-two
     storageCapacity: 10Gi
     accessMode: ReadWriteMany
     path: /srv/nfs_shares/share_two
     server: callisto.local
     reclaimPolicy: Retain
-  - name: volume-three
+  - name: volatile-three
     storageCapacity: 10Gi
     accessMode: ReadWriteMany
     path: /srv/nfs_shares/share_three
     server: callisto.local
     reclaimPolicy: Retain
-  - name: volume-four
+  - name: volatile-four
     storageCapacity: 100Gi
     accessMode: ReadWriteMany
     path: /srv/nfs_shares/share_four
     server: callisto.local
     reclaimPolicy: Retain
-  - name: volume-five
+  - name: volatile-five
     storageCapacity: 100Gi
     accessMode: ReadWriteMany
     path: /srv/nfs_shares/share_five
     server: callisto.local
     reclaimPolicy: Retain
-  - name: volume-six
+  - name: volatile-six
     storageCapacity: 100Gi
     accessMode: ReadWriteMany
     path: /srv/nfs_shares/share_six
     server: callisto.local
     reclaimPolicy: Retain
-  - name: volume-seven
+  - name: volatile-seven
     storageCapacity: 20Gi
     accessMode: ReadWriteMany
     path: /srv/nfs_shares/share_seven
     server: callisto.local
     reclaimPolicy: Retain
-  - name: volume-eight
+  - name: volatile-eight
     storageCapacity: 20Gi
     accessMode: ReadWriteMany
     path: /srv/nfs_shares/share_eight
     server: callisto.local
     reclaimPolicy: Retain
-  - name: volume-nine
+  - name: volatile-nine
     storageCapacity: 20Gi
     accessMode: ReadWriteMany
     path: /srv/nfs_shares/share_nice
