@@ -42,47 +42,26 @@ nfsVolumes:
     path: /srv/nfs_shares/share_two
     server: callisto.local
     reclaimPolicy: Retain
-  - name: volatile-three
-    storageCapacity: 10Gi
+  - name: raid-five-zero
+    storageCapacity: 5Gi
     accessMode: ReadWriteMany
-    path: /srv/nfs_shares/share_three
-    server: callisto.local
+    path: /srv/nfs_shares/share_zero
+    server: ganymede.local
     reclaimPolicy: Retain
-  - name: volatile-four
-    storageCapacity: 100Gi
+    type: raid-five
+  - name: raid-five-one
+    storageCapacity: 25Gi
     accessMode: ReadWriteMany
-    path: /srv/nfs_shares/share_four
-    server: callisto.local
+    path: /srv/nfs_shares/share_one
+    server: ganymede.local
     reclaimPolicy: Retain
-  - name: volatile-five
-    storageCapacity: 100Gi
+    type: raid-five
+  - name: raid-five-two
+    storageCapacity: 50Gi
     accessMode: ReadWriteMany
-    path: /srv/nfs_shares/share_five
-    server: callisto.local
+    path: /srv/nfs_shares/share_two
+    server: ganymede.local
     reclaimPolicy: Retain
-  - name: volatile-six
-    storageCapacity: 100Gi
-    accessMode: ReadWriteMany
-    path: /srv/nfs_shares/share_six
-    server: callisto.local
-    reclaimPolicy: Retain
-  - name: volatile-seven
-    storageCapacity: 20Gi
-    accessMode: ReadWriteMany
-    path: /srv/nfs_shares/share_seven
-    server: callisto.local
-    reclaimPolicy: Retain
-  - name: volatile-eight
-    storageCapacity: 20Gi
-    accessMode: ReadWriteMany
-    path: /srv/nfs_shares/share_eight
-    server: callisto.local
-    reclaimPolicy: Retain
-  - name: volatile-nine
-    storageCapacity: 20Gi
-    accessMode: ReadWriteMany
-    path: /srv/nfs_shares/share_nice
-    server: callisto.local
-    reclaimPolicy: Retain
+    type: raid-five
 
 
