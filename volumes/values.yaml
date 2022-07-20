@@ -3,36 +3,36 @@
 # Declare variables to be passed into your templates.
 
 nfsVolumes: 
-  - name: share_zero
-    storageCapacity: 100Gi
+  - name: share-zero
+    storageCapacity: 50Gi
     accessMode: ReadWriteMany
     path: /srv/nfs_shares/share_zero
     server: io.local
     type: free
     reclaimPolicy: Retain
-  - name: share_one
-    storageCapacity: 100Gi
+  - name: share-one
+    storageCapacity: 50Gi
     accessMode: ReadWriteMany
     path: /srv/nfs_shares/share_one
     server: io.local
     reclaimPolicy: Retain
     type: free
-  - name: share_two
-    storageCapacity: 100Gi
+  - name: share-two
+    storageCapacity: 50Gi
     accessMode: ReadWriteMany
     path: /srv/nfs_shares/share_two
     server: io.local
     reclaimPolicy: Retain
     type: free
-  - name: share_three
-    storageCapacity: 100Gi
+  - name: share-three
+    storageCapacity: 50Gi
     accessMode: ReadWriteMany
     path: /srv/nfs_shares/share_three
     server: io.local
     reclaimPolicy: Retain
     type: free
-  - name: share_four
-    storageCapacity: 100Gi
+  - name: share-four
+    storageCapacity: 50Gi
     accessMode: ReadWriteMany
     path: /srv/nfs_shares/share_four
     server: io.local
