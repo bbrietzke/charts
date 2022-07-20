@@ -3,65 +3,40 @@
 # Declare variables to be passed into your templates.
 
 nfsVolumes: 
-  - name: mirrored-zero
-    storageCapacity: 5Gi
+  - name: share_zero
+    storageCapacity: 100Gi
     accessMode: ReadWriteMany
     path: /srv/nfs_shares/share_zero
-    server: pontoon.local
-    type: mirror
+    server: io.local
+    type: free
     reclaimPolicy: Retain
-  - name: mirrored-one
-    storageCapacity: 5Gi
-    accessMode: ReadWriteMany
-    path: /srv/nfs_shares/share_zero
-    server: pontoon.local
-    type: mirror
-    reclaimPolicy: Retain
-  - name: mirrored-two
-    storageCapacity: 5Gi
-    accessMode: ReadWriteMany
-    path: /srv/nfs_shares/share_zero
-    server: pontoon.local
-    type: mirror
-    reclaimPolicy: Retain
-  - name: volatile-zero
-    storageCapacity: 10Gi
-    accessMode: ReadWriteMany
-    path: /srv/nfs_shares/share_zero
-    server: callisto.local
-    reclaimPolicy: Retain
-  - name: volatile-one
-    storageCapacity: 10Gi
+  - name: share_one
+    storageCapacity: 100Gi
     accessMode: ReadWriteMany
     path: /srv/nfs_shares/share_one
-    server: callisto.local
+    server: io.local
     reclaimPolicy: Retain
-  - name: volatile-two
-    storageCapacity: 10Gi
+    type: free
+  - name: share_two
+    storageCapacity: 100Gi
     accessMode: ReadWriteMany
     path: /srv/nfs_shares/share_two
-    server: callisto.local
+    server: io.local
     reclaimPolicy: Retain
-  - name: raid-five-zero
-    storageCapacity: 5Gi
+    type: free
+  - name: share_three
+    storageCapacity: 100Gi
     accessMode: ReadWriteMany
-    path: /srv/nfs_shares/share_zero
-    server: ganymede.local
+    path: /srv/nfs_shares/share_three
+    server: io.local
     reclaimPolicy: Retain
-    type: raid-five
-  - name: raid-five-one
-    storageCapacity: 25Gi
+    type: free
+  - name: share_four
+    storageCapacity: 100Gi
     accessMode: ReadWriteMany
-    path: /srv/nfs_shares/share_one
-    server: ganymede.local
+    path: /srv/nfs_shares/share_four
+    server: io.local
     reclaimPolicy: Retain
-    type: raid-five
-  - name: raid-five-two
-    storageCapacity: 50Gi
-    accessMode: ReadWriteMany
-    path: /srv/nfs_shares/share_two
-    server: ganymede.local
-    reclaimPolicy: Retain
-    type: raid-five
+    type: free
 
 
