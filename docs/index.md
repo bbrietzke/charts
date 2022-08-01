@@ -9,7 +9,7 @@ helm repo add bbrietzke https://bbrietzke.github.io/charts/
 ```
 
 ## Chart Layout
-* __volumes__: creates 3 10Gi volumes, 4 100Gi volumes and 3 20Gi volumes
+* __volumes__: creates 3 10Gi volumes, 4 100Gi volumes and 3 20Gi volumes.  Also can create local volumes.
 
 ## Automation
 There is a _Makefile_ included that will help automate a number of the steps to publish the charts.

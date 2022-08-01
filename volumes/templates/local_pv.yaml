@@ -1,5 +1,5 @@
 
-{{- range $v := .Values.nfsVolumes }}
+{{- range $v := .Values.localVolumes }}
 ---
 apiVersion: v1
 kind: PersistentVolume
@@ -8,16 +8,22 @@ metadata:
   labels:
     name: {{ $v.name | quote }}
     type: {{ $v.type | quote }}
-    storage: nfs
+    storage: local
 spec:
   capacity:
     storage: {{ $v.storageCapacity | quote }}
   accessModes:
     - {{ $v.accessMode | quote }}
   persistentVolumeReclaimPolicy: {{ $v.reclaimPolicy | quote }}
-  storageClassName: nfs
-  nfs:
+  storageClassName: local-storage
+  local:
     path: {{ $v.path | quote }}
-    server: {{ $v.server | quote }}
-    readOnly: false
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - {{ $v.hostName | quote }}
 {{- end }}

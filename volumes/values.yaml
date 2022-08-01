@@ -40,3 +40,11 @@ nfsVolumes:
     type: free
 
 
+localVolumes:
+  - name: minio-storage
+    storageCapacity: 40Gi
+    hostName: sage
+    reclaimPolicy: Retain
+    accessMode: ReadWriteOnce
+    type: s3
+    path: /srv/minio

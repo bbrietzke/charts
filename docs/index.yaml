@@ -3,9 +3,9 @@ entries:
   volumes:
   - apiVersion: v2
     appVersion: 0.1.6
-    created: "2022-07-20T12:56:11.948985-05:00"
+    created: "2022-08-01T14:02:03.987489-05:00"
     description: Building persistent volumes
-    digest: 91857917c47058dcafbe3f52fdd803488d003b16d447ff78d18310d4344c42ca
+    digest: b8de6e568638f782c1b1693a52170b7e1bcaa9482c6e723cd1113d7d8deb7eb8
     name: volumes
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 0.1.5
-    created: "2022-07-20T12:56:11.948799-05:00"
+    created: "2022-08-01T14:02:03.987283-05:00"
     description: Building persistent volumes
     digest: 24039f50f8a6710b42bd7372fa9da3b9037226dbb7ddd2fe5c54566abf09fcd0
     name: volumes
@@ -23,7 +23,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 0.1.4
-    created: "2022-07-20T12:56:11.948445-05:00"
+    created: "2022-08-01T14:02:03.986763-05:00"
     description: Building persistent volumes
     digest: c7d817f7b8403875d36dd5b56c75b6d5bb6f3fed13becdcbaa533d9523779444
     name: volumes
@@ -33,7 +33,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 0.1.3
-    created: "2022-07-20T12:56:11.948105-05:00"
+    created: "2022-08-01T14:02:03.986177-05:00"
     description: Building persistent volumes
     digest: e8a4d53ece7c47df19155a6427872abd45b3e820b3671782aa5a5d7d0bb4cb85
     name: volumes
@@ -43,7 +43,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.1.2
-    created: "2022-07-20T12:56:11.947716-05:00"
+    created: "2022-08-01T14:02:03.98571-05:00"
     description: Building persistent volumes
     digest: 3d891cb44b76447fbf23e1747fc368ba2b98e1bf7df27db3f936948d143d0638
     name: volumes
@@ -51,4 +51,4 @@ entries:
     urls:
     - charts/volumes-0.1.2.tgz
     version: 0.1.2
-generated: "2022-07-20T12:56:11.947231-05:00"
+generated: "2022-08-01T14:02:03.984823-05:00"
