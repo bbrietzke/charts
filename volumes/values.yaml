@@ -9,34 +9,34 @@ nfsVolumes:
     path: /srv/nfs_shares/share_zero
     server: io.local
     type: free
-    reclaimPolicy: Retain
+    reclaimPolicy: Recycle
   - name: share-one
     storageCapacity: 50Gi
     accessMode: ReadWriteMany
     path: /srv/nfs_shares/share_one
     server: io.local
-    reclaimPolicy: Retain
+    reclaimPolicy: Recycle
     type: free
   - name: share-two
     storageCapacity: 50Gi
     accessMode: ReadWriteMany
     path: /srv/nfs_shares/share_two
     server: io.local
-    reclaimPolicy: Retain
+    reclaimPolicy: Recycle
     type: free
   - name: share-three
     storageCapacity: 50Gi
     accessMode: ReadWriteMany
     path: /srv/nfs_shares/share_three
     server: io.local
-    reclaimPolicy: Retain
+    reclaimPolicy: Recycle
     type: free
   - name: share-four
     storageCapacity: 50Gi
     accessMode: ReadWriteMany
     path: /srv/nfs_shares/share_four
     server: io.local
-    reclaimPolicy: Retain
+    reclaimPolicy: Recycle
     type: free
 
 
@@ -44,7 +44,7 @@ localVolumes:
   - name: minio-storage
     storageCapacity: 40Gi
     hostName: sage
-    reclaimPolicy: Retain
+    reclaimPolicy: Recycle
     accessMode: ReadWriteOnce
     type: s3
     path: /srv/minio

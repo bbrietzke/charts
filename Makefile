@@ -12,5 +12,9 @@ volumes: $(HELM) $(VOLUMES_TGZ)
 	$(HELM) package volumes
 	mv volumes*.tgz docs/charts
 
-index: $(HELM) volumes
+minio: $(HELM) $(VOLUMES_TGZ)
+	$(HELM) package minio
+	mv minio*.tgz docs/charts
+
+index: $(HELM) volumes minio
 	$(HELM) repo index docs/
