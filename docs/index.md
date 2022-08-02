@@ -5,7 +5,7 @@ This is a collection of helm charts that I've worked on for my Kubernetes cluste
 ## Using the Charts
 
 ```
-helm repo add bbrietzke https://bbrietzke.github.io/charts/
+helm repo add bbrietzke https://helmcharts.duckdns.org
 ```
 
 ## Chart Layout

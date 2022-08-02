@@ -2,9 +2,11 @@
 
 DOC := $(shell which mkdocs)
 HELM := $(shell which helm)
+EPOCH :=$(shell date +%s )
 
 VOLUMES_TGZ := docs/charts/volumes*.tgz
 MINIO_TGZ := docs/charts/minio*.tgz
+MINIO_TGZ := docs/charts/helmrepo*.tgz
 
 publish: $(DOC)
 	$(DOC) gh-deploy
@@ -17,5 +19,14 @@ minio: $(HELM) $(MINIO_TGZ)
 	$(HELM) package minio
 	mv minio*.tgz docs/charts
 
+repo:  $(HELM) $(MINIO_TGZ)
+	$(HELM) package minio
+	mv minio*.tgz docs/charts
+
 index: $(HELM) volumes minio
 	$(HELM) repo index docs/
+
+buildx: index
+	mkdocs build 
+	docker buildx build --platform linux/amd64,linux/arm64/v8,linux/386 --push -t bbrietzke/helm-repo:latest .
+	rm -rf site
