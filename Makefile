@@ -6,7 +6,7 @@ EPOCH :=$(shell date +%s )
 
 VOLUMES_TGZ := docs/charts/volumes*.tgz
 MINIO_TGZ := docs/charts/minio*.tgz
-MINIO_TGZ := docs/charts/helmrepo*.tgz
+HELM_TGZ := docs/charts/helmrepo*.tgz
 
 publish: $(DOC)
 	$(DOC) gh-deploy
@@ -16,10 +16,6 @@ volumes: $(HELM) $(VOLUMES_TGZ)
 	mv volumes*.tgz docs/charts
 
 minio: $(HELM) $(MINIO_TGZ)
-	$(HELM) package minio
-	mv minio*.tgz docs/charts
-
-repo:  $(HELM) $(MINIO_TGZ)
 	$(HELM) package minio
 	mv minio*.tgz docs/charts
 
