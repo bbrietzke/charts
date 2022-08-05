@@ -25,4 +25,5 @@ index: $(HELM) volumes minio
 buildx: index
 	mkdocs build 
 	docker buildx build --platform linux/amd64,linux/arm64/v8,linux/386 --push -t bbrietzke/helm-repo:latest .
+	docker buildx build --platform linux/amd64,linux/arm64/v8,linux/386 --push -t bbrietzke/helm-repo:$(EPOCH) .
 	rm -rf site
