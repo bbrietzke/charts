@@ -10,13 +10,14 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Tue Aug  2 12:57:35 2022
+# Make data base, printed on Fri Aug 12 11:51:37 2022
 
 # Variables
 
+# makefile (from `Makefile', line 9)
+HELM_TGZ := docs/charts/helmrepo*.tgz
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
- 
 # environment
 RUBY_VERSION = ruby-3.0.0
 # automatic
@@ -48,13 +49,13 @@ INFOPATH = /opt/homebrew/share/info:
 # environment
 VSCODE_CWD = /
 # environment
-PATH = /Users/bbrietzke/.rvm/gems/ruby-3.0.0/bin:/Users/bbrietzke/.rvm/gems/ruby-3.0.0@global/bin:/Users/bbrietzke/.rvm/rubies/ruby-3.0.0/bin:/Users/bbrietzke/.nvm/versions/node/v16.13.0/bin:/Applications/Julia-1.6.app/Contents/Resources/julia/bin:/Users/bbrietzke/.rbenv/shims:/Users/bbrietzke/.pyenv/shims:/Users/bbrietzke/.pyenv/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/bbrietzke/.rvm/bin:/Users/bbrietzke/go/bin
+PATH = /Users/bbrietzke/.rvm/gems/ruby-3.0.0/bin:/Users/bbrietzke/.rvm/gems/ruby-3.0.0@global/bin:/Users/bbrietzke/.rvm/rubies/ruby-3.0.0/bin:/Users/bbrietzke/.nvm/versions/node/v16.13.0/bin:/Users/bbrietzke/.rbenv/shims:/Users/bbrietzke/.pyenv/shims:/Users/bbrietzke/.pyenv/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/bbrietzke/.rvm/bin:/Users/bbrietzke/go/bin
 # environment
 NVM_BIN = /Users/bbrietzke/.nvm/versions/node/v16.13.0/bin
 # makefile (from `Makefile', line 4)
 HELM := /opt/homebrew/bin/helm
-# environment
-LaunchInstanceID = D7254DA5-A914-4E00-A4CF-34E2F616DBF1
+# makefile (from `Makefile', line 5)
+EPOCH := 1660323097
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
@@ -65,7 +66,7 @@ PYENV_ROOT = /Users/bbrietzke/.pyenv
 SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.mRezHDqXPc/Listeners
 # automatic
 %F = $(notdir $%)
-# makefile (from `Makefile', line 6)
+# makefile (from `Makefile', line 7)
 VOLUMES_TGZ := docs/charts/volumes*.tgz
 # environment
 rvm_bin_path = /Users/bbrietzke/.rvm/bin
@@ -88,11 +89,11 @@ HOME = /Users/bbrietzke
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/bbrietzke/Library/Application Support/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
+VSCODE_CODE_CACHE_PATH = /Users/bbrietzke/Library/Application Support/Code/CachedData/da76f93349a72022ca4670c1b84860304616aaa2
 # environment
 LOGNAME = bbrietzke
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 NVM_CD_FLAGS = -q
 # environment
@@ -109,7 +110,7 @@ MAKE = $(MAKE_COMMAND)
 MAKECMDGOALS := all
 # environment
 IRBRC = /Users/bbrietzke/.rvm/rubies/ruby-3.0.0/.irbrc
-# makefile (from `Makefile', line 7)
+# makefile (from `Makefile', line 8)
 MINIO_TGZ := docs/charts/minio*.tgz
 # environment
 SHLVL = 1
@@ -136,7 +137,7 @@ TMPDIR = /var/folders/rh/hny9t66915bgs49vxwts3tq00000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/bbrietzke/Library/Application Support/Code/1.69.2-main.sock
+VSCODE_IPC_HOOK = /Users/bbrietzke/Library/Application Support/Code/1.70.0-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -148,7 +149,7 @@ MFLAGS = -Rrqp
 # environment
 NVM_DIR = /Users/bbrietzke/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.30817797.30817803
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.32519086.32519092
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -160,7 +161,6 @@ HOMEBREW_REPOSITORY = /opt/homebrew
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
 # environment
- 
 COMMAND_MODE = unix2003
 # default
 MAKEFILES := 
@@ -170,8 +170,6 @@ RBENV_SHELL = zsh
 <F = $(notdir $<)
 # environment
 LC_ALL = C
-# environment
-SECURITYSESSIONID = 186a5
 # automatic
 ^F = $(notdir $^)
 # environment
@@ -183,11 +181,11 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 525
+VSCODE_PID = 64741
 # environment
 MY_RUBY_HOME = /Users/bbrietzke/.rvm/rubies/ruby-3.0.0
 # variable set hash-table stats:
-# Load=85/1024=8%, Rehash=0, Collisions=3/118=3%
+# Load=85/1024=8%, Rehash=0, Collisions=6/120=5%
 
 # Pattern-specific Variable Values
 
@@ -195,10 +193,10 @@ MY_RUBY_HOME = /Users/bbrietzke/.rvm/rubies/ruby-3.0.0
 
 # Directories
 
-# . (device 16777234, inode 29981665): 14 files, no impossibilities.
+# . (device 16777234, inode 29981665): 15 files, no impossibilities.
 # docs/charts (device 16777234, inode 29981735): 8 files, no impossibilities.
 
-# 22 files, no impossibilities in 2 directories.
+# 23 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -236,7 +234,7 @@ index: /opt/homebrew/bin/helm volumes minio
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 21):
+#  commands to execute (from `Makefile', line 23):
 	$(HELM) repo index docs/
 	
 
@@ -255,7 +253,7 @@ index: /opt/homebrew/bin/helm volumes minio
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-02 08:19:27
+#  Last modified 2022-08-05 16:58:43
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -272,6 +270,17 @@ docs/charts/volumes-0.1.3.tgz:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+
+buildx: index
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 26):
+	mkdocs build 
+	docker buildx build --platform linux/amd64,linux/arm64/v8,linux/386 --push -t bbrietzke/helm-repo:latest .
+	docker buildx build --platform linux/amd64,linux/arm64/v8,linux/386 --push -t bbrietzke/helm-repo:$(EPOCH) .
+	rm -rf site
+	
 
 # Not a target:
 docs/charts/volumes-0.1.5.tgz:
@@ -303,11 +312,12 @@ work:
 #  Modification time never checked.
 #  File has not been updated.
 
+ 
 minio: /opt/homebrew/bin/helm docs/charts/minio-0.1.0.tgz
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 17):
+#  commands to execute (from `Makefile', line 19):
 	$(HELM) package minio
 	mv minio*.tgz docs/charts
 	
@@ -316,7 +326,7 @@ publish: /opt/homebrew/bin/mkdocs
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 10):
+#  commands to execute (from `Makefile', line 12):
 	$(DOC) gh-deploy
 	
 
@@ -330,7 +340,7 @@ volumes: /opt/homebrew/bin/helm docs/charts/volumes-0.1.2.tgz docs/charts/volume
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 13):
+#  commands to execute (from `Makefile', line 15):
 	$(HELM) package volumes
 	mv volumes*.tgz docs/charts
 	
@@ -354,7 +364,7 @@ docs/charts/volumes-0.1.6.tgz:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=22/1024=2%, Rehash=0, Collisions=0/51=0%
+# Load=23/1024=2%, Rehash=0, Collisions=0/53=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -366,6 +376,6 @@ docs/charts/volumes-0.1.6.tgz:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Tue Aug  2 12:57:35 2022
+# Finished Make data base on Fri Aug 12 11:51:37 2022
 
  

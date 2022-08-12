@@ -7,6 +7,10 @@ This is a collection of helm charts that I've worked on for my Kubernetes cluste
 ```
 helm repo add bbrietzke http://helmcharts.duckdns.org
 ```
+or
+```
+helm repo add bbrietzke http://bbrietzke.github.io/charts
+```
 
 ## Chart Layout
 * __volumes__: creates 3 10Gi volumes, 4 100Gi volumes and 3 20Gi volumes.  Also can create local volumes.
