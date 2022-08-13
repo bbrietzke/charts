@@ -3,7 +3,7 @@ entries:
   minio:
   - apiVersion: v2
     appVersion: latest
-    created: "2022-08-05T16:58:50.499588-05:00"
+    created: "2022-08-12T11:55:30.710287-05:00"
     description: A Helm chart for Minio
     digest: 9c2597f8970cca2ee5778a161e8e1622c802893d033f022ba3c42f2902ea8e83
     name: minio
@@ -14,7 +14,7 @@ entries:
   volumes:
   - apiVersion: v2
     appVersion: 0.1.6
-    created: "2022-08-05T16:58:50.501052-05:00"
+    created: "2022-08-12T11:55:30.711932-05:00"
     description: Building persistent volumes
     digest: b8de6e568638f782c1b1693a52170b7e1bcaa9482c6e723cd1113d7d8deb7eb8
     name: volumes
@@ -24,7 +24,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 0.1.5
-    created: "2022-08-05T16:58:50.500767-05:00"
+    created: "2022-08-12T11:55:30.711654-05:00"
     description: Building persistent volumes
     digest: 24039f50f8a6710b42bd7372fa9da3b9037226dbb7ddd2fe5c54566abf09fcd0
     name: volumes
@@ -34,7 +34,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 0.1.4
-    created: "2022-08-05T16:58:50.500476-05:00"
+    created: "2022-08-12T11:55:30.711337-05:00"
     description: Building persistent volumes
     digest: c7d817f7b8403875d36dd5b56c75b6d5bb6f3fed13becdcbaa533d9523779444
     name: volumes
@@ -44,7 +44,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 0.1.3
-    created: "2022-08-05T16:58:50.500182-05:00"
+    created: "2022-08-12T11:55:30.71101-05:00"
     description: Building persistent volumes
     digest: e8a4d53ece7c47df19155a6427872abd45b3e820b3671782aa5a5d7d0bb4cb85
     name: volumes
@@ -54,7 +54,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.1.2
-    created: "2022-08-05T16:58:50.499875-05:00"
+    created: "2022-08-12T11:55:30.710696-05:00"
     description: Building persistent volumes
     digest: 3d891cb44b76447fbf23e1747fc368ba2b98e1bf7df27db3f936948d143d0638
     name: volumes
@@ -62,4 +62,4 @@ entries:
     urls:
     - charts/volumes-0.1.2.tgz
     version: 0.1.2
-generated: "2022-08-05T16:58:50.498996-05:00"
+generated: "2022-08-12T11:55:30.709749-05:00"
