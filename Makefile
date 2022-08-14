@@ -6,20 +6,24 @@ EPOCH :=$(shell date +%s )
 
 VOLUMES_TGZ := docs/charts/volumes*.tgz
 MINIO_TGZ := docs/charts/minio*.tgz
-HELM_TGZ := docs/charts/helmrepo*.tgz
+NAMES_TGZ := docs/charts/namespaces*.tgz
+
+$(NAMES_TGZ): $(HELM)
+	$(HELM) package namespaces
+	mv namespaces*.tgz docs/charts
+
+$(MINIO_TGZ): $(HELM)
+	$(HELM) package minio
+	mv minio*.tgz docs/charts
+
+$(VOLUMES_TGZ): $(HELM)
+	$(HELM) package volumes
+	mv volumes*.tgz docs/charts
 
 publish: $(DOC)
 	$(DOC) gh-deploy
 
-volumes: $(HELM) $(VOLUMES_TGZ)
-	$(HELM) package volumes
-	mv volumes*.tgz docs/charts
-
-minio: $(HELM) $(MINIO_TGZ)
-	$(HELM) package minio
-	mv minio*.tgz docs/charts
-
-index: $(HELM) volumes minio
+index: $(HELM) $(VOLUMES_TGZ) $(MINIO_TGZ) $(NAMES_TGZ)
 	$(HELM) repo index docs/
 
 buildx: index

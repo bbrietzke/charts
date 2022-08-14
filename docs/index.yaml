@@ -3,63 +3,34 @@ entries:
   minio:
   - apiVersion: v2
     appVersion: latest
-    created: "2022-08-12T11:55:30.710287-05:00"
+    created: "2022-08-14T15:05:43.325244-05:00"
     description: A Helm chart for Minio
-    digest: 9c2597f8970cca2ee5778a161e8e1622c802893d033f022ba3c42f2902ea8e83
+    digest: 3a00addea31e92580036e694c6f1cfa583dc24bd7507665af82d952cf86fcf0c
     name: minio
     type: application
     urls:
-    - charts/minio-0.1.0.tgz
-    version: 0.1.0
+    - charts/minio-0.1.1.tgz
+    version: 0.1.1
+  namespaces:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-08-14T15:05:43.325362-05:00"
+    description: Creates a series of namespaces for the cluster
+    digest: 8699d411b5073b583cac93944e3cd207259ca30aa5da4f6ee4a3373e36eecd90
+    name: namespaces
+    type: application
+    urls:
+    - charts/namespaces-1.0.0.tgz
+    version: 1.0.0
   volumes:
   - apiVersion: v2
     appVersion: 0.1.6
-    created: "2022-08-12T11:55:30.711932-05:00"
+    created: "2022-08-14T15:05:43.32553-05:00"
     description: Building persistent volumes
-    digest: b8de6e568638f782c1b1693a52170b7e1bcaa9482c6e723cd1113d7d8deb7eb8
+    digest: 232f4814fe3a7fc321a269045a66a638a394de327b0f19b167f9432c4e50056b
     name: volumes
     type: application
     urls:
     - charts/volumes-0.1.6.tgz
     version: 0.1.6
-  - apiVersion: v2
-    appVersion: 0.1.5
-    created: "2022-08-12T11:55:30.711654-05:00"
-    description: Building persistent volumes
-    digest: 24039f50f8a6710b42bd7372fa9da3b9037226dbb7ddd2fe5c54566abf09fcd0
-    name: volumes
-    type: application
-    urls:
-    - charts/volumes-0.1.5.tgz
-    version: 0.1.5
-  - apiVersion: v2
-    appVersion: 0.1.4
-    created: "2022-08-12T11:55:30.711337-05:00"
-    description: Building persistent volumes
-    digest: c7d817f7b8403875d36dd5b56c75b6d5bb6f3fed13becdcbaa533d9523779444
-    name: volumes
-    type: application
-    urls:
-    - charts/volumes-0.1.4.tgz
-    version: 0.1.4
-  - apiVersion: v2
-    appVersion: 0.1.3
-    created: "2022-08-12T11:55:30.71101-05:00"
-    description: Building persistent volumes
-    digest: e8a4d53ece7c47df19155a6427872abd45b3e820b3671782aa5a5d7d0bb4cb85
-    name: volumes
-    type: application
-    urls:
-    - charts/volumes-0.1.3.tgz
-    version: 0.1.3
-  - apiVersion: v2
-    appVersion: 0.1.2
-    created: "2022-08-12T11:55:30.710696-05:00"
-    description: Building persistent volumes
-    digest: 3d891cb44b76447fbf23e1747fc368ba2b98e1bf7df27db3f936948d143d0638
-    name: volumes
-    type: application
-    urls:
-    - charts/volumes-0.1.2.tgz
-    version: 0.1.2
-generated: "2022-08-12T11:55:30.709749-05:00"
+generated: "2022-08-14T15:05:43.324787-05:00"

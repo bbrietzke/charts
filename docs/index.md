@@ -29,5 +29,6 @@ Commands include:
 * __publish__: use MkDocs to publish to `gh-pages` branch
 * __volumes__: package the volumes chart and move it to the correct location
 * __index__: create or update the index.yaml file
+* __namespaces__: adds a _dev_, _infra_, and _prod_ namespace to the cluster
 
 
