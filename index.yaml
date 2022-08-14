@@ -3,7 +3,7 @@ entries:
   minio:
   - apiVersion: v2
     appVersion: latest
-    created: "2022-08-14T14:53:07.178609-05:00"
+    created: "2022-08-14T14:57:59.311122-05:00"
     description: A Helm chart for Minio
     digest: 9c2597f8970cca2ee5778a161e8e1622c802893d033f022ba3c42f2902ea8e83
     name: minio
@@ -14,9 +14,9 @@ entries:
   namespaces:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-08-14T14:53:07.178748-05:00"
+    created: "2022-08-14T14:57:59.311231-05:00"
     description: Creates a series of namespaces for the cluster
-    digest: 2032a341bae1a96836f388ba791a42f41e8dda49e28a14710306c26d9f981823
+    digest: a2ea83a3f3196f02c327f4e00fe764da419e6f9567c933977641e67c8e1edb0a
     name: namespaces
     type: application
     urls:
@@ -25,7 +25,7 @@ entries:
   volumes:
   - apiVersion: v2
     appVersion: 0.1.6
-    created: "2022-08-14T14:53:07.179833-05:00"
+    created: "2022-08-14T14:57:59.313039-05:00"
     description: Building persistent volumes
     digest: b8de6e568638f782c1b1693a52170b7e1bcaa9482c6e723cd1113d7d8deb7eb8
     name: volumes
@@ -35,7 +35,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 0.1.5
-    created: "2022-08-14T14:53:07.179653-05:00"
+    created: "2022-08-14T14:57:59.31276-05:00"
     description: Building persistent volumes
     digest: 24039f50f8a6710b42bd7372fa9da3b9037226dbb7ddd2fe5c54566abf09fcd0
     name: volumes
@@ -45,7 +45,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 0.1.4
-    created: "2022-08-14T14:53:07.179442-05:00"
+    created: "2022-08-14T14:57:59.312302-05:00"
     description: Building persistent volumes
     digest: c7d817f7b8403875d36dd5b56c75b6d5bb6f3fed13becdcbaa533d9523779444
     name: volumes
@@ -55,7 +55,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 0.1.3
-    created: "2022-08-14T14:53:07.179225-05:00"
+    created: "2022-08-14T14:57:59.311963-05:00"
     description: Building persistent volumes
     digest: e8a4d53ece7c47df19155a6427872abd45b3e820b3671782aa5a5d7d0bb4cb85
     name: volumes
@@ -65,7 +65,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.1.2
-    created: "2022-08-14T14:53:07.178996-05:00"
+    created: "2022-08-14T14:57:59.311602-05:00"
     description: Building persistent volumes
     digest: 3d891cb44b76447fbf23e1747fc368ba2b98e1bf7df27db3f936948d143d0638
     name: volumes
@@ -73,4 +73,4 @@ entries:
     urls:
     - charts/volumes-0.1.2.tgz
     version: 0.1.2
-generated: "2022-08-14T14:53:07.1783-05:00"
+generated: "2022-08-14T14:57:59.310076-05:00"
