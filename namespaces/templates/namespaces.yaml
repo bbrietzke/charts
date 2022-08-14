@@ -1,0 +1,12 @@
+{{ range $v := .Values.namespaces }}
+---
+api: v1
+kind: Namespace
+metadata:
+    name: {{ $v.name | quote }}
+    labels:
+        app.kubernetes.io/name: {{ $v.name | quote }}
+        app.kubernetes.io/version: {{ $.Chart.AppVersion | quote }}
+        chart: "{{ $.Chart.Name }}-{{ $.Chart.Version }}"
+        release: {{ $.Release.Name  | quote}}
+{{ end }}
