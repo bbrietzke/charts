@@ -47,7 +47,9 @@ Selector labels
 */}}
 {{- define "helm-repository.selectorLabels" -}}
 app.kubernetes.io/name: {{ include "helm-repository.name" . }}
-app.kubernetes.io/instance: {{ .Release.Name }}
+app.kubernetes.io/instance: {{ .Release.Name | quote }}
+app.kubernetes.io/version: {{ $.Chart.AppVersion | quote }}
+app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{- end }}
 
 {{/*

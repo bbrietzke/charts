@@ -1,1 +1,1 @@
-{"buildTargets":["buildx","docs","home","image","index","minio","publish","test","volumes","work"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
+{"buildTargets":["buildx","docs","docs/charts/minio-0.1.1.tgz","docs/charts/namespaces-1.0.0.tgz","docs/charts/volumes-0.1.6.tgz","home","image","index","publish","test","work"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}

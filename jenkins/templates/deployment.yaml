@@ -53,6 +53,11 @@ spec:
           #     port: http
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+          volumeMounts:
+            - name: var-jenkins
+              mountPath: "/var/jenkins_home"
+            - name: tmpmem
+              mountPath: "/tmp"
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
@@ -65,3 +70,10 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+      volumes:
+        - name: var-jenkins
+          persistentVolumeClaim:
+            claimName: jenkins-claim
+        - name: tmpmem
+          emptyDir:
+            medium: "Memory"
