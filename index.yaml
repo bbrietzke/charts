@@ -3,7 +3,7 @@ entries:
   minio:
   - apiVersion: v2
     appVersion: latest
-    created: "2022-08-15T08:02:02.052047-05:00"
+    created: "2022-08-16T12:59:20.76412-05:00"
     description: A Helm chart for Minio
     digest: 3a00addea31e92580036e694c6f1cfa583dc24bd7507665af82d952cf86fcf0c
     name: minio
@@ -14,7 +14,7 @@ entries:
   namespaces:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-08-15T08:02:02.052217-05:00"
+    created: "2022-08-16T12:59:20.764267-05:00"
     description: Creates a series of namespaces for the cluster
     digest: 8699d411b5073b583cac93944e3cd207259ca30aa5da4f6ee4a3373e36eecd90
     name: namespaces
@@ -25,7 +25,7 @@ entries:
   volumes:
   - apiVersion: v2
     appVersion: 0.1.6
-    created: "2022-08-15T08:02:02.05246-05:00"
+    created: "2022-08-16T12:59:20.764511-05:00"
     description: Building persistent volumes
     digest: 232f4814fe3a7fc321a269045a66a638a394de327b0f19b167f9432c4e50056b
     name: volumes
@@ -33,4 +33,4 @@ entries:
     urls:
     - charts/volumes-0.1.6.tgz
     version: 0.1.6
-generated: "2022-08-15T08:02:02.05146-05:00"
+generated: "2022-08-16T12:59:20.763549-05:00"
