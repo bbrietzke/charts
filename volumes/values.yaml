@@ -3,38 +3,17 @@
 # Declare variables to be passed into your templates.
 
 nfsVolumes: 
-  - name: share-zero
+  - name: prometheus
     storageCapacity: 50Gi
-    accessMode: ReadWriteMany
-    path: /srv/nfs_shares/share_zero
+    accessMode: ReadWriteOnce
+    path: /srv/nfs_shares/prometheus
     server: io.local
     type: free
     reclaimPolicy: Recycle
-  - name: share-one
+  - name: alertmanager
     storageCapacity: 50Gi
-    accessMode: ReadWriteMany
-    path: /srv/nfs_shares/share_one
-    server: io.local
-    reclaimPolicy: Recycle
-    type: free
-  - name: share-two
-    storageCapacity: 50Gi
-    accessMode: ReadWriteMany
-    path: /srv/nfs_shares/share_two
-    server: io.local
-    reclaimPolicy: Recycle
-    type: free
-  - name: share-three
-    storageCapacity: 50Gi
-    accessMode: ReadWriteMany
-    path: /srv/nfs_shares/share_three
-    server: io.local
-    reclaimPolicy: Recycle
-    type: free
-  - name: share-four
-    storageCapacity: 50Gi
-    accessMode: ReadWriteMany
-    path: /srv/nfs_shares/share_four
+    accessMode: ReadWriteOnce
+    path: /srv/nfs_shares/alertman
     server: io.local
     reclaimPolicy: Recycle
     type: free
