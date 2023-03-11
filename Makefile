@@ -33,6 +33,5 @@ index: $(HELM) $(VOLUMES_TGZ) $(MINIO_TGZ) $(NAMES_TGZ) $(MASTODON_TGZ)
 
 buildx: index
 	mkdocs build 
-	docker buildx build --platform linux/amd64,linux/arm64/v8,linux/386 --push -t bbrietzke/helm-repo:latest .
-	docker buildx build --platform linux/amd64,linux/arm64/v8,linux/386 --push -t bbrietzke/helm-repo:$(EPOCH) .
+	docker buildx build --platform linux/amd64,linux/arm64,linux/arm64/v8,linux/386 --push -t bbrietzke/helm-repo:latest -t bbrietzke/helm-repo:$(EPOCH) .
 	rm -rf site
