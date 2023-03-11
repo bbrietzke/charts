@@ -1,0 +1,32 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    # add an annotation indicating the issuer to use.
+    cert-manager.io/issuer: selfsigned-issuer
+  name: mastdon-dev
+  namespace: dev
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: mastodon.faultycloud.xyz
+    http:
+      paths:
+      - backend:
+          service:
+            name: mastodon-web
+            port:
+              number: 3000
+        path: /
+        pathType: Prefix
+      - backend:
+          service:
+            name: mastodon-streaming
+            port:
+              number: 4000
+        path: /api/v1/streaming
+        pathType: Prefix
+  tls: # < placing a host in the TLS config will determine what ends up in the cert's subjectAltNames
+  - hosts:
+    - mastodon.faultycloud.xyz
+    secretName: mastdon-dev-cert # < cert-manager will store the created certificate in this secret.

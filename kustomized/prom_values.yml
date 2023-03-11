@@ -41,6 +41,7 @@ serverFiles:
             - 10.0.0.195:9100
             - 10.0.0.144:9100
             - 10.0.0.110:9100
+            - 10.0.0.239:9100
             - 10.0.0.57:9100
       - job_name: 'kubernetes-apiservers'
         kubernetes_sd_configs:
