@@ -1,9 +1,33 @@
 apiVersion: v1
 entries:
+  mastodon:
+  - apiVersion: v2
+    appVersion: v4.1.0
+    created: "2023-03-10T20:26:24.766028-06:00"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 19.5.14
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 12.2.2
+    - condition: redis.enabled
+      name: redis
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 17.8.4
+    description: Mastodon is a free, open-source social network server based on ActivityPub.
+    digest: 961a26f04b0f7de3f550725a8d53c828357a7cabea9343bc95c0ed005ac79512
+    name: mastodon
+    type: application
+    urls:
+    - charts/mastodon-4.1.0.tgz
+    version: 4.1.0
   minio:
   - apiVersion: v2
     appVersion: latest
-    created: "2023-03-07T16:09:58.985861-06:00"
+    created: "2023-03-10T20:26:24.766544-06:00"
     description: A Helm chart for Minio
     digest: fea542f20515ad9935f985f75202ebf7687f7714da5a6c8eb2e475cd528134f5
     name: minio
@@ -14,7 +38,7 @@ entries:
   namespaces:
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2023-03-07T16:09:58.986067-06:00"
+    created: "2023-03-10T20:26:24.766848-06:00"
     description: Creates a series of namespaces for the cluster
     digest: 09a9b4f9be616b7f4e38dae29630dfe472655aba31418b3d315a5c598353fac3
     name: namespaces
@@ -25,7 +49,7 @@ entries:
   volumes:
   - apiVersion: v2
     appVersion: 0.1.8
-    created: "2023-03-07T16:09:58.986241-06:00"
+    created: "2023-03-10T20:26:24.767071-06:00"
     description: Building persistent volumes
     digest: e30238fc6f55d0017b282cc8f99664fc736f56c949e937e71a3d90dfad4bfae4
     name: volumes
@@ -33,4 +57,4 @@ entries:
     urls:
     - charts/volumes-0.1.8.tgz
     version: 0.1.8
-generated: "2023-03-07T16:09:58.98524-06:00"
+generated: "2023-03-10T20:26:24.754094-06:00"

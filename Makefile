@@ -7,6 +7,11 @@ EPOCH :=$(shell date +%s )
 VOLUMES_TGZ := docs/charts/volumes*.tgz
 MINIO_TGZ := docs/charts/minio*.tgz
 NAMES_TGZ := docs/charts/namespaces*.tgz
+MASTODON_TGZ := docs/charts/mastodon*.tgz
+
+$(MASTODON_TGZ): $(HELM)
+	$(HELM) package -u mastodon-chart
+	mv mastodon*.tgz docs/charts
 
 $(NAMES_TGZ): $(HELM)
 	$(HELM) package namespaces
@@ -23,7 +28,7 @@ $(VOLUMES_TGZ): $(HELM)
 publish: $(DOC)
 	$(DOC) gh-deploy
 
-index: $(HELM) $(VOLUMES_TGZ) $(MINIO_TGZ) $(NAMES_TGZ)
+index: $(HELM) $(VOLUMES_TGZ) $(MINIO_TGZ) $(NAMES_TGZ) $(MASTODON_TGZ)
 	$(HELM) repo index docs/
 
 buildx: index
