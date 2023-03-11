@@ -47,6 +47,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#chart-layout">Chart Layout</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#finding-values">Finding values</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#automation">Automation</a>
     </li>
     </ul>
@@ -78,15 +80,20 @@
                 <h1 id="welcome-to-charts">Welcome to Charts</h1>
 <p>This is a collection of helm charts that I've worked on for my Kubernetes cluster at home.</p>
 <h2 id="using-the-charts">Using the Charts</h2>
-<pre><code>helm repo add bbrietzke http://helmcharts.duckdns.org
-</code></pre>
-<p>or</p>
 <pre><code>helm repo add bbrietzke http://bbrietzke.github.io/charts
 </code></pre>
 <h2 id="chart-layout">Chart Layout</h2>
 <ul>
 <li><strong>volumes</strong>: creates 3 10Gi volumes, 4 100Gi volumes and 3 20Gi volumes.  Also can create local volumes.</li>
+<li><strong>namespaces</strong>: creates three namespaces, prod, dev and infra</li>
+<li><strong>jenkins</strong>: sets up a good ol' fashioned jenkins server</li>
+<li><strong>mastodon</strong>: fork of the mastodon social networking application</li>
 </ul>
+<h2 id="finding-values">Finding values</h2>
+<p>You can always execute something like the below to find out what values you can apply:</p>
+<pre><code>helm show values bbrietzke/jenkins 
+</code></pre>
+<p>Redirect the above to a file and then edit to your own delight.</p>
 <h2 id="automation">Automation</h2>
 <p>There is a <em>Makefile</em> included that will help automate a number of the steps to publish the charts.</p>
 <p>The typical workflow includes:</p>
@@ -141,5 +148,5 @@
 
 <!--
 MkDocs version : 1.4.2
-Build Date UTC : 2023-03-11 02:27:29.450062+00:00
+Build Date UTC : 2023-03-11 03:21:05.109419+00:00
 -->
