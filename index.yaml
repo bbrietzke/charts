@@ -3,7 +3,7 @@ entries:
   mastodon:
   - apiVersion: v2
     appVersion: v4.1.0
-    created: "2023-03-20T16:41:27.017507-05:00"
+    created: "2023-03-28T08:12:14.770935-05:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -27,9 +27,9 @@ entries:
   minio:
   - apiVersion: v2
     appVersion: latest
-    created: "2023-03-20T16:41:27.017802-05:00"
+    created: "2023-03-28T08:12:14.77113-05:00"
     description: A Helm chart for Minio
-    digest: fea542f20515ad9935f985f75202ebf7687f7714da5a6c8eb2e475cd528134f5
+    digest: 6fe4679b31c9c35ef9d7f7f3eeeb4109f666df95b8c1cd456fa2cef1acb5ac80
     name: minio
     type: application
     urls:
@@ -38,9 +38,9 @@ entries:
   namespaces:
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2023-03-20T16:41:27.018034-05:00"
+    created: "2023-03-28T08:12:14.771288-05:00"
     description: Creates a series of namespaces for the cluster
-    digest: 09a9b4f9be616b7f4e38dae29630dfe472655aba31418b3d315a5c598353fac3
+    digest: b08a8ee4c55afe04f56f3e540d8c8935a8e5991b2b78cc13dad11a870684961f
     name: namespaces
     type: application
     urls:
@@ -49,12 +49,12 @@ entries:
   volumes:
   - apiVersion: v2
     appVersion: 0.1.8
-    created: "2023-03-20T16:41:27.018193-05:00"
+    created: "2023-03-28T08:12:14.77142-05:00"
     description: Building persistent volumes
-    digest: e30238fc6f55d0017b282cc8f99664fc736f56c949e937e71a3d90dfad4bfae4
+    digest: aca870b2002faa4b45438a3ebf6d23e6ebcc3da17f2e105cd2aa8a71d8986c12
     name: volumes
     type: application
     urls:
     - charts/volumes-0.1.8.tgz
     version: 0.1.8
-generated: "2023-03-20T16:41:27.003052-05:00"
+generated: "2023-03-28T08:12:14.758013-05:00"
