@@ -9,21 +9,18 @@ nfsVolumes:
     path: /srv/nfs_shares/prometheus
     server: io.local
     type: free
-    reclaimPolicy: Recycle
+    reclaimPolicy: Retain
   - name: alertmanager
+    storageCapacity: 5Gi
+    accessMode: ReadWriteOnce
+    path: /srv/nfs_shares/prom_alertman
+    server: io.local
+    reclaimPolicy: Retain
+    type: free
+  - name: mastodon
     storageCapacity: 50Gi
     accessMode: ReadWriteOnce
-    path: /srv/nfs_shares/alertman
+    path: /srv/nfs_shares/mastodon
     server: io.local
     reclaimPolicy: Recycle
     type: free
-
-
-localVolumes:
-  - name: minio-storage
-    storageCapacity: 40Gi
-    hostName: sage
-    reclaimPolicy: Recycle
-    accessMode: ReadWriteOnce
-    type: s3
-    path: /srv/minio
