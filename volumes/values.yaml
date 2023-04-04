@@ -7,20 +7,27 @@ nfsVolumes:
     storageCapacity: 50Gi
     accessMode: ReadWriteOnce
     path: /srv/nfs_shares/prometheus
-    server: io.local
+    server: 192.168.1.37
     type: free
     reclaimPolicy: Retain
   - name: alertmanager
     storageCapacity: 5Gi
     accessMode: ReadWriteOnce
     path: /srv/nfs_shares/prom_alertman
-    server: io.local
+    server: 192.168.1.37
     reclaimPolicy: Retain
     type: free
-  - name: mastodon
+  - name: gitea
     storageCapacity: 50Gi
     accessMode: ReadWriteOnce
-    path: /srv/nfs_shares/mastodon
-    server: io.local
+    path: /srv/nfs_shares/gitea
+    server: 192.168.1.37
     reclaimPolicy: Recycle
+    type: free
+  - name: grafana
+    storageCapacity: 5Gi
+    accessMode: ReadWriteOnce
+    path: /srv/nfs_shares/grafana
+    server: 192.168.1.37
+    reclaimPolicy: Retain
     type: free
