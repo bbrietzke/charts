@@ -2,8 +2,8 @@ apiVersion: v1
 entries:
   mastodon:
   - apiVersion: v2
-    appVersion: v4.1.0
-    created: "2023-04-10T10:48:27.165475-05:00"
+    appVersion: v4.1.2
+    created: "2023-04-10T10:49:42.874105-05:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -18,18 +18,18 @@ entries:
       repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
       version: 17.8.4
     description: Mastodon is a free, open-source social network server based on ActivityPub.
-    digest: b85c7d80e117dd067eccc48a40afe0692423a838f760b3e54170c70c502fab03
+    digest: 3ccf5db1c5c7d95b77f77d548667f35d2f7563be2847eca5438e2f847fdde932
     name: mastodon
     type: application
     urls:
-    - charts/mastodon-4.1.1.tgz
-    version: 4.1.1
+    - charts/mastodon-4.1.2.tgz
+    version: 4.1.2
   minio:
   - apiVersion: v2
     appVersion: latest
-    created: "2023-04-10T10:48:27.165812-05:00"
+    created: "2023-04-10T10:49:42.874435-05:00"
     description: A Helm chart for Minio
-    digest: 6fe4679b31c9c35ef9d7f7f3eeeb4109f666df95b8c1cd456fa2cef1acb5ac80
+    digest: d3f4cb2654e2781803a3e7d9fef575f82c63feac4c1424a2221b540ad347cb36
     name: minio
     type: application
     urls:
@@ -38,9 +38,9 @@ entries:
   namespaces:
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2023-04-10T10:48:27.16601-05:00"
+    created: "2023-04-10T10:49:42.87465-05:00"
     description: Creates a series of namespaces for the cluster
-    digest: b08a8ee4c55afe04f56f3e540d8c8935a8e5991b2b78cc13dad11a870684961f
+    digest: 956465f1c292c41e7678f50b689cf1d38737d70a016f54e0c04d0edb63f007a6
     name: namespaces
     type: application
     urls:
@@ -49,12 +49,12 @@ entries:
   volumes:
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2023-04-10T10:48:27.166273-05:00"
+    created: "2023-04-10T10:49:42.875011-05:00"
     description: Building persistent volumes
-    digest: 88f692a2016de5a6a9a5f49aa3328cc9d0159e5ca403eb6a332dd3675f715f38
+    digest: 53b446a86a009e9e75cab1050442c38ca026ccd8c5db4cdde2b37c33f94a8f8a
     name: volumes
     type: application
     urls:
     - charts/volumes-0.2.0.tgz
     version: 0.2.0
-generated: "2023-04-10T10:48:27.151413-05:00"
+generated: "2023-04-10T10:49:42.862812-05:00"
