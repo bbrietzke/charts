@@ -1,35 +1,11 @@
 apiVersion: v1
 entries:
-  mastodon:
-  - apiVersion: v2
-    appVersion: v4.1.2
-    created: "2023-04-10T10:49:42.874105-05:00"
-    dependencies:
-    - condition: elasticsearch.enabled
-      name: elasticsearch
-      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
-      version: 19.5.14
-    - condition: postgresql.enabled
-      name: postgresql
-      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
-      version: 12.2.2
-    - condition: redis.enabled
-      name: redis
-      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
-      version: 17.8.4
-    description: Mastodon is a free, open-source social network server based on ActivityPub.
-    digest: 3ccf5db1c5c7d95b77f77d548667f35d2f7563be2847eca5438e2f847fdde932
-    name: mastodon
-    type: application
-    urls:
-    - charts/mastodon-4.1.2.tgz
-    version: 4.1.2
   minio:
   - apiVersion: v2
     appVersion: latest
-    created: "2023-04-10T10:49:42.874435-05:00"
+    created: "2024-11-17T08:06:23.406237-06:00"
     description: A Helm chart for Minio
-    digest: d3f4cb2654e2781803a3e7d9fef575f82c63feac4c1424a2221b540ad347cb36
+    digest: 31a142b3dc1bafd6e9667f5f6e6c4597286ad41febf9a1f1096509927c0cee1d
     name: minio
     type: application
     urls:
@@ -38,9 +14,9 @@ entries:
   namespaces:
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2023-04-10T10:49:42.87465-05:00"
+    created: "2024-11-17T08:06:23.406402-06:00"
     description: Creates a series of namespaces for the cluster
-    digest: 956465f1c292c41e7678f50b689cf1d38737d70a016f54e0c04d0edb63f007a6
+    digest: 1811c7ed1665298ea4f2a0b892dedef7bb6c6959e3f44ba63fc31f02b11190ee
     name: namespaces
     type: application
     urls:
@@ -49,12 +25,12 @@ entries:
   volumes:
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2023-04-10T10:49:42.875011-05:00"
+    created: "2024-11-17T08:06:23.406585-06:00"
     description: Building persistent volumes
-    digest: 53b446a86a009e9e75cab1050442c38ca026ccd8c5db4cdde2b37c33f94a8f8a
+    digest: 3912bc4683259b96a6d411477ec45c9060429f5c666e26b091826b8cffbe2010
     name: volumes
     type: application
     urls:
     - charts/volumes-0.2.0.tgz
     version: 0.2.0
-generated: "2023-04-10T10:49:42.862812-05:00"
+generated: "2024-11-17T08:06:23.405831-06:00"
