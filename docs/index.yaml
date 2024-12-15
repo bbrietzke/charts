@@ -2,8 +2,8 @@ apiVersion: v1
 entries:
   mastodon:
   - apiVersion: v2
-    appVersion: v4.1.0
-    created: "2023-03-28T08:43:55.430607-05:00"
+    appVersion: v4.1.2
+    created: "2024-12-15T14:45:06.021706-06:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -18,7 +18,30 @@ entries:
       repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
       version: 17.8.4
     description: Mastodon is a free, open-source social network server based on ActivityPub.
-    digest: b85c7d80e117dd067eccc48a40afe0692423a838f760b3e54170c70c502fab03
+    digest: 3ccf5db1c5c7d95b77f77d548667f35d2f7563be2847eca5438e2f847fdde932
+    name: mastodon
+    type: application
+    urls:
+    - charts/mastodon-4.1.2.tgz
+    version: 4.1.2
+  - apiVersion: v2
+    appVersion: v4.1.1
+    created: "2024-12-15T14:45:06.010635-06:00"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 19.5.14
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 12.2.2
+    - condition: redis.enabled
+      name: redis
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 17.8.4
+    description: Mastodon is a free, open-source social network server based on ActivityPub.
+    digest: f55082985b27ef25feb0cfed6925a702081e16166831898ebaec8fc28ea639f8
     name: mastodon
     type: application
     urls:
@@ -27,9 +50,9 @@ entries:
   minio:
   - apiVersion: v2
     appVersion: latest
-    created: "2023-03-28T08:43:55.430891-05:00"
+    created: "2024-12-15T14:45:06.02203-06:00"
     description: A Helm chart for Minio
-    digest: 6fe4679b31c9c35ef9d7f7f3eeeb4109f666df95b8c1cd456fa2cef1acb5ac80
+    digest: 76207765a5bb7e4bc9a1fae4fc877ac5e0d23235bf50d16c8bbe14a3c4f8dfab
     name: minio
     type: application
     urls:
@@ -38,9 +61,9 @@ entries:
   namespaces:
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2023-03-28T08:43:55.431077-05:00"
+    created: "2024-12-15T14:45:06.022272-06:00"
     description: Creates a series of namespaces for the cluster
-    digest: b08a8ee4c55afe04f56f3e540d8c8935a8e5991b2b78cc13dad11a870684961f
+    digest: 7ca9da3ebe27ab1640baa6d240fb7817eae0e3da65e40e6db185128936dcc7aa
     name: namespaces
     type: application
     urls:
@@ -48,13 +71,13 @@ entries:
     version: 1.0.1
   volumes:
   - apiVersion: v2
-    appVersion: 0.1.8
-    created: "2023-03-28T08:43:55.431233-05:00"
+    appVersion: 0.2.0
+    created: "2024-12-15T14:45:06.022951-06:00"
     description: Building persistent volumes
-    digest: aca870b2002faa4b45438a3ebf6d23e6ebcc3da17f2e105cd2aa8a71d8986c12
+    digest: 4b33635ee5158bf5c9b68231cb55fbf0dcf7866d0131c9703137b5bc2ad617da
     name: volumes
     type: application
     urls:
-    - charts/volumes-0.1.8.tgz
-    version: 0.1.8
-generated: "2023-03-28T08:43:55.41717-05:00"
+    - charts/volumes-0.2.0.tgz
+    version: 0.2.0
+generated: "2024-12-15T14:45:05.999783-06:00"
