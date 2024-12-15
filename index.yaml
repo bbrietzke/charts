@@ -1,11 +1,58 @@
 apiVersion: v1
 entries:
+  mastodon:
+  - apiVersion: v2
+    appVersion: v4.1.2
+    created: "2024-12-15T14:45:06.021706-06:00"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 19.5.14
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 12.2.2
+    - condition: redis.enabled
+      name: redis
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 17.8.4
+    description: Mastodon is a free, open-source social network server based on ActivityPub.
+    digest: 3ccf5db1c5c7d95b77f77d548667f35d2f7563be2847eca5438e2f847fdde932
+    name: mastodon
+    type: application
+    urls:
+    - charts/mastodon-4.1.2.tgz
+    version: 4.1.2
+  - apiVersion: v2
+    appVersion: v4.1.1
+    created: "2024-12-15T14:45:06.010635-06:00"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 19.5.14
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 12.2.2
+    - condition: redis.enabled
+      name: redis
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 17.8.4
+    description: Mastodon is a free, open-source social network server based on ActivityPub.
+    digest: f55082985b27ef25feb0cfed6925a702081e16166831898ebaec8fc28ea639f8
+    name: mastodon
+    type: application
+    urls:
+    - charts/mastodon-4.1.1.tgz
+    version: 4.1.1
   minio:
   - apiVersion: v2
     appVersion: latest
-    created: "2024-11-17T08:06:54.193913-06:00"
+    created: "2024-12-15T14:45:06.02203-06:00"
     description: A Helm chart for Minio
-    digest: 31a142b3dc1bafd6e9667f5f6e6c4597286ad41febf9a1f1096509927c0cee1d
+    digest: 76207765a5bb7e4bc9a1fae4fc877ac5e0d23235bf50d16c8bbe14a3c4f8dfab
     name: minio
     type: application
     urls:
@@ -14,9 +61,9 @@ entries:
   namespaces:
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2024-11-17T08:06:54.194071-06:00"
+    created: "2024-12-15T14:45:06.022272-06:00"
     description: Creates a series of namespaces for the cluster
-    digest: 1811c7ed1665298ea4f2a0b892dedef7bb6c6959e3f44ba63fc31f02b11190ee
+    digest: 7ca9da3ebe27ab1640baa6d240fb7817eae0e3da65e40e6db185128936dcc7aa
     name: namespaces
     type: application
     urls:
@@ -25,12 +72,12 @@ entries:
   volumes:
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2024-11-17T08:06:54.194384-06:00"
+    created: "2024-12-15T14:45:06.022951-06:00"
     description: Building persistent volumes
-    digest: 3912bc4683259b96a6d411477ec45c9060429f5c666e26b091826b8cffbe2010
+    digest: 4b33635ee5158bf5c9b68231cb55fbf0dcf7866d0131c9703137b5bc2ad617da
     name: volumes
     type: application
     urls:
     - charts/volumes-0.2.0.tgz
     version: 0.2.0
-generated: "2024-11-17T08:06:54.193586-06:00"
+generated: "2024-12-15T14:45:05.999783-06:00"
